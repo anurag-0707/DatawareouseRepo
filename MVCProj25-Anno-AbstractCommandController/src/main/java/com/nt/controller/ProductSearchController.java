@@ -26,6 +26,7 @@ public class ProductSearchController {
 		List<ProductResultDTO> listDTO = service.getProduct(dto);
 		System.out.println(listDTO.toString());
 		map.addAttribute("products", listDTO);
+		System.out.println("HI");
 		return "product_show";
 	}
 
